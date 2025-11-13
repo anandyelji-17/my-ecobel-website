@@ -1,42 +1,63 @@
 {% extends "base.html" %}
 {% block title %}ECOBEL — Sustainable Bamboo Tissue{% endblock %}
 {% block content %}
-  <section style="margin-bottom:18px;">
-    <h1 style="font-size:2.25rem; margin-bottom:6px;">ECOBEL — Bamboo tissue & sustainable alternatives</h1>
-    <p style="font-size:1.05rem; color:#444; margin-bottom:12px;">
-      Replacing single-use paper tissues with high-quality bamboo alternatives. Strong, soft, and sustainable — made for a greener future.
-    </p>
-    <p>
-      <a href="/products" style="padding:10px 14px; text-decoration:none; border-radius:6px; background:#1f9d55; color:white;">Shop Products</a>
-      <a href="/contact" style="margin-left:10px; padding:10px 14px; text-decoration:none; border-radius:6px; border:1px solid #ddd;">Get a Quote</a>
-    </p>
-  </section>
-
-  <section style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px;">
-    <div style="background:white; padding:16px; border-radius:8px;">
-      <h3>Our Mission</h3>
-      <p>To replace regular tissues with bamboo tissue papers — reducing deforestation and single-use waste.</p>
+  <div class="row align-items-center mb-5">
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold">ECOBEL — Bamboo tissue & sustainable alternatives</h1>
+      <p class="lead text-muted">Soft. Strong. Sustainable. We manufacture premium bamboo tissue paper and eco alternatives to help replace single-use paper in everyday life.</p>
+      <div class="d-flex gap-2">
+        <a href="/products" class="btn btn-success btn-lg">View Products</a>
+        <a href="/contact" class="btn btn-outline-secondary btn-lg">Request a Quote</a>
+      </div>
+      <div class="mt-4">
+        <small class="text-muted">Made ethically · Transparent sourcing · Suitable for retail & bulk</small>
+      </div>
     </div>
-    <div style="background:white; padding:16px; border-radius:8px;">
-      <h3>Why Bamboo?</h3>
-      <p>Bamboo grows fast, needs less water, and is biodegradable — a natural solution to plastic and pulp problems.</p>
+    <div class="col-lg-6 text-center">
+      <div class="card border-0 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=60" class="img-fluid rounded" alt="Bamboo">
+      </div>
     </div>
-    <div style="background:white; padding:16px; border-radius:8px;">
-      <h3>Our Promise</h3>
-      <p>100% transparent sourcing, minimal processing, and product quality you can trust.</p>
+  </div>
+
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Our Mission</h5>
+          <p class="card-text text-muted">To replace regular tissues with bamboo tissue papers through quality manufacturing and transparent sourcing.</p>
+        </div>
+      </div>
     </div>
-  </section>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Why Bamboo?</h5>
+          <p class="card-text text-muted">Fast-growing, low-water, biodegradable — a sustainable alternative to wood pulp.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Quality Promise</h5>
+          <p class="card-text text-muted">Hypoallergenic, soft, and strong. Lab-tested for household and commercial use.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <hr style="margin:22px 0;">
-
-  <section>
-    <h2>Featured product: Bamboo Tissue (Premium)</h2>
-    <p>Soft yet strong tissues made from sustainably-grown bamboo. Available in bulk and retail packaging.</p>
-    <ul>
-      <li>Biodegradable</li>
-      <li>Hypoallergenic</li>
-      <li>Farm-to-shelf transparency</li>
-    </ul>
-    <p><a href="/products">See full products list →</a></p>
-  </section>
+  <h3 class="mb-3">Featured product</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-3 mb-5">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1581579185862-b7c9cc2b373b?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="product">
+        <div class="card-body">
+          <h5 class="card-title">Bamboo Tissue — Premium</h5>
+          <p class="card-text text-muted">Retail & bulk packaging. Biodegradable and gentle on skin.</p>
+          <a href="/products" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

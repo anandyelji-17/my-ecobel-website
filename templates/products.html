@@ -1,27 +1,36 @@
 {% extends "base.html" %}
 {% block title %}Products - ECOBEL{% endblock %}
 {% block content %}
-  <h1>Products</h1>
+  <h1 class="mb-4">Products</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1581579185862-b7c9cc2b373b?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="Tissue">
+        <div class="card-body">
+          <h5 class="card-title">Bamboo Tissue — Premium</h5>
+          <p class="card-text text-muted">Soft, strong and compostable. Retail & bulk packaging available.</p>
+        </div>
+      </div>
+    </div>
 
-  <section style="margin-bottom:12px;">
-    <h2>Bamboo Tissue — Premium</h2>
-    <p>Soft, strong, and eco-friendly tissue paper. Available in retail rolls and bulk boxes.</p>
-    <p><strong>Packaging:</strong> Retail / Bulk / Bulk for businesses</p>
-  </section>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1563213126-3e0b3c2f3d3e?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="Napkins">
+        <div class="card-body">
+          <h5 class="card-title">Bamboo Napkins & Towels</h5>
+          <p class="card-text text-muted">Absorbent and gentle — suitable for household and restaurant use.</p>
+        </div>
+      </div>
+    </div>
 
-  <section style="margin-bottom:12px;">
-    <h2>Bamboo Towels & Napkins</h2>
-    <p>Absorbent, reusable-quality paper alternatives.</p>
-  </section>
-
-  <section style="margin-bottom:12px;">
-    <h2>Bamboo-based Alternatives</h2>
-    <ul>
-      <li>Bamboo cutlery & plates (compostable)</li>
-      <li>Bamboo toothbrushes</li>
-      <li>Bamboo fabric swatches & wipes</li>
-    </ul>
-  </section>
-
-  <p>If you'd like pricing or bulk quotes, please <a href="/contact">contact us</a>.</p>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1582719478184-8d9b2f8b1fa9?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="cutlery">
+        <div class="card-body">
+          <h5 class="card-title">Bamboo Alternatives</h5>
+          <p class="card-text text-muted">Cutlery, plates, toothbrushes & more — compostable alternatives to single-use plastic.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

@@ -2,12 +2,22 @@
 {% block title %}FAQ - ECOBEL{% endblock %}
 {% block content %}
   <h1>FAQ</h1>
-  <h3>Is bamboo tissue really better than regular tissue?</h3>
-  <p>Yes — bamboo grows much faster than trees and requires fewer resources. Proper processing ensures comparable softness and strength.</p>
-
-  <h3>Do you ship internationally?</h3>
-  <p>We currently support domestic shipping. For international or bulk orders, please contact sales via the contact form.</p>
-
-  <h3>Do you offer samples for businesses?</h3>
-  <p>Yes — contact us and we can arrange product samples for B2B customers.</p>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="q1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1">Is bamboo tissue really better?</button>
+      </h2>
+      <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Bamboo grows quickly and requires fewer resources than trees. Properly processed bamboo can match softness and strength.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="q2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">Do you ship internationally?</button>
+      </h2>
+      <div id="c2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">We currently support domestic shipments. For international orders, please contact us for a quote.</div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
