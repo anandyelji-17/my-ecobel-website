@@ -1,10 +1,42 @@
 {% extends "base.html" %}
-{% block title %}Home - My Flask Site{% endblock %}
+{% block title %}ECOBEL — Sustainable Bamboo Tissue{% endblock %}
 {% block content %}
-  <h1>Welcome to my Codespace Flask site!</h1>
-  <p>Type your name and say hi:</p>
-  <form action="/hello" method="post">
-    <input type="text" name="name" placeholder="Your name" />
-    <button type="submit">Say Hello</button>
-  </form>
+  <section style="margin-bottom:18px;">
+    <h1 style="font-size:2.25rem; margin-bottom:6px;">ECOBEL — Bamboo tissue & sustainable alternatives</h1>
+    <p style="font-size:1.05rem; color:#444; margin-bottom:12px;">
+      Replacing single-use paper tissues with high-quality bamboo alternatives. Strong, soft, and sustainable — made for a greener future.
+    </p>
+    <p>
+      <a href="/products" style="padding:10px 14px; text-decoration:none; border-radius:6px; background:#1f9d55; color:white;">Shop Products</a>
+      <a href="/contact" style="margin-left:10px; padding:10px 14px; text-decoration:none; border-radius:6px; border:1px solid #ddd;">Get a Quote</a>
+    </p>
+  </section>
+
+  <section style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px;">
+    <div style="background:white; padding:16px; border-radius:8px;">
+      <h3>Our Mission</h3>
+      <p>To replace regular tissues with bamboo tissue papers — reducing deforestation and single-use waste.</p>
+    </div>
+    <div style="background:white; padding:16px; border-radius:8px;">
+      <h3>Why Bamboo?</h3>
+      <p>Bamboo grows fast, needs less water, and is biodegradable — a natural solution to plastic and pulp problems.</p>
+    </div>
+    <div style="background:white; padding:16px; border-radius:8px;">
+      <h3>Our Promise</h3>
+      <p>100% transparent sourcing, minimal processing, and product quality you can trust.</p>
+    </div>
+  </section>
+
+  <hr style="margin:22px 0;">
+
+  <section>
+    <h2>Featured product: Bamboo Tissue (Premium)</h2>
+    <p>Soft yet strong tissues made from sustainably-grown bamboo. Available in bulk and retail packaging.</p>
+    <ul>
+      <li>Biodegradable</li>
+      <li>Hypoallergenic</li>
+      <li>Farm-to-shelf transparency</li>
+    </ul>
+    <p><a href="/products">See full products list →</a></p>
+  </section>
 {% endblock %}

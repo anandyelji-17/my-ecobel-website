@@ -2,3 +2,11 @@ body { font-family: Arial, sans-serif; background:#f7f7f7; color:#222; padding:3
 .container { background: white; padding:20px; border-radius:8px; max-width:600px; margin:auto; box-shadow: 0 2px 8px rgba(0,0,0,0.08);}
 input { padding:8px; margin-right:6px;}
 button { padding:8px 12px; }
+
+/* ECOBEL accent + minor layout tweaks */
+:root { --ecobel-green: #1f9d55; }
+
+h1 { color:#222; font-weight:700; }
+h2 { color:#222; font-weight:600; }
+a.cta { background:var(--ecobel-green); color:white; padding:10px 12px; border-radius:6px; text-decoration:none;}
+footer p { font-size:0.85rem; color:#666; }

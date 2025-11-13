@@ -1,16 +1,17 @@
 {% extends "base.html" %}
-{% block title %}Contact - My Flask Site{% endblock %}
+{% block title %}Contact - ECOBEL{% endblock %}
 {% block content %}
   <h1>Contact</h1>
+  <p>Send us a message or request a bulk quote. We'll respond promptly.</p>
+  <p><strong>Head Office:</strong> [City], [State], India (replace with actual address)</p>
 
   {% if success %}
     <div style="padding:12px; background:#e6ffed; border:1px solid #c2f0d0; border-radius:6px;">
       <strong>Thanks {{ name|e }} — message received!</strong>
-      <p>We will get back to you at <em>{{ email|e }}</em> if needed.</p>
+      <p>We will get back to you at <em>{{ email|e }}</em>.</p>
     </div>
     <p><a href="/contact">Send another message</a></p>
   {% else %}
-    <p>Have a question? Send a quick message below.</p>
     <form action="/contact" method="post">
       <div style="margin-bottom:8px;">
         <input name="name" placeholder="Your name" required style="padding:8px; width:100%;" />
