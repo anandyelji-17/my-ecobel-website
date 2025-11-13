@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
+import os
 
 app = Flask(__name__)
 
@@ -11,6 +12,21 @@ def hello():
     name = request.form.get('name', 'Friend')
     return render_template('hello.html', name=name)
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == 'POST':
+        name = request.form.get('name', '').strip()
+        email = request.form.get('email', '').strip()
+        message = request.form.get('message', '').strip()
+        # In a real app you'd save this to a DB or send an email.
+        # For demo we just show a success message on the same page.
+        return render_template('contact.html', success=True, name=name or 'Friend', email=email)
+    return render_template('contact.html', success=False)
+
 if __name__ == '__main__':
-    # Bind to 0.0.0.0 so Codespaces can forward the port
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port, debug=True)
